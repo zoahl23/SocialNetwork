@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Đăng ký</title>
+		<link rel="stylesheet" href="css/styleLogIn.css">
+		<script type="text/javascript">
+			function signIn () {
+				const tnd = document.getElementById('tnd');
+				const tid = document.getElementById('tid');
+				const nmk = document.getElementById('nmk');
+				const nlmk = document.getElementById('nlmk');
+
+				var kTra = false;
+
+				if((tid.value.length > 7) && (tid.value.length < 17) && (nmk.value.length > 3) && (nlmk.value == nmk.value)){
+					kTra = true;
+				}
+				if(kTra == true){
+					tnd_data = tnd.value;
+					localStorage.setItem("tnd", tnd_data);
+
+					tid_data = tid.value;
+					localStorage.setItem("tid", tid_data);
+
+					nmk_data = nmk.value;
+					localStorage.setItem("nmk", nmk_data);
+
+					alert("Đăng kí thành công, hệ thống sẽ đưa bạn đến trang đăng nhập");
+					window.location = "logIn.html";
+				}
+				else{
+					alert("Đăng kí không thành công! Xin hãy thử lại");
+				}
+			}
+
+			function chTrag () {
+				window.location = 'logIn.html';
+			}
+		</script>
+	</head>
+	<body>
+		<div class="head">
+			<div class="head_right">
+				<button class="btli" onclick="chTrag ()">Log in</button>
+			</div>
+		</div>
+		<div class="form">
+			<div class="tenMXH"><img src="image/zoablr.png" height="56px"></div>
+			<div class="phanLog">
+				<div class="nhap">
+					<input type="text" class="ip" placeholder="Tên người dùng" id="tnd">
+				</div>
+				<div class="nhap">
+					<input type="text" class="ip" placeholder="Tên ID ( từ 8 - 16 kí tự )" id="tid">
+				</div>
+				<div class="nhap">
+					<input type="password" class="ip" placeholder="Mật khẩu ( tối thiểu 4 kí tự )" id="nmk">
+				</div>
+				<div class="nhap">
+					<input type="password" class="ip" placeholder="Nhập lại mật khẩu" id="nlmk">
+				</div>
+				<div class="dieuKhoan">By clicking sign up, or continuing with the other options below, you agree to Zoahl’s Terms of Service and have read the Privacy Policy</div>
+				<div class="dangKy">
+					<button class="bt" onclick="signIn ()">Sign Up</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

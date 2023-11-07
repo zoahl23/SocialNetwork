@@ -1,0 +1,38 @@
+
+/*=========================
+	Phần đầu của trang
+===========================
+
+head   
+	head_left
+		logo_head
+		timKiem
+			kinhLup
+			goTK
+				oGoTK
+	head_right 
+		logIn
+		signUp
+
+=========================*/
+
+
+.logIn{
+	width: 77px;
+	height: 36px;
+	background-color: #00cf35;
+	border-radius: 3px;
+	margin-right: 10px;
+	padding: 6px 15px;
+	font-size: 16px;
+	font-weight: 500;
+}
+.signUp{
+	width: 86px;
+	height: 36px;
+	background-color: #00b8ff;
+	border-radius: 3px;
+	padding: 6px 15px;
+	font-size: 16px;
+	font-weight: 500;
+}

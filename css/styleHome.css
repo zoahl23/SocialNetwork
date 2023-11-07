@@ -1,0 +1,484 @@
+/*=========================
+	Các thẻ đặc biệt
+=========================*/
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	background-color: #1A2735;
+	margin: 0;
+	padding: 0;
+}
+*{
+	box-sizing: border-box;
+}
+::placeholder{
+	color: #767C82;
+}
+a{
+	text-decoration: none;
+}
+button{
+	border: none;
+}
+
+/*=========================
+	Phần đầu của trang
+===========================
+
+head   
+	head_left
+		logo_head
+		timKiem
+			kinhLup
+			goTK
+				oGoTK
+	head_right 
+		chucNang 
+			tt : đổi màu trang chủ
+
+=========================*/
+
+.head{
+	width: 100%;
+	height: 55px;
+	background-color: #1A2735;
+	padding-left: 22px;
+	padding-right: 20px;
+	border-bottom: 1px solid #434D58;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.head_left{
+	display: flex;
+	align-items: center;
+}
+.logo_head{
+	width: 34px;
+	height: 34px;
+	margin-right: 18px;
+}
+.timKiem{
+	max-width: 480px;
+	width: 100%;
+	height: 34px;
+	display: flex;
+	flex-direction: row;
+}
+.kinhLup{
+	width: 38px;
+	height: 34px;
+	background-color: #434D58;
+	border-radius: 5px 0px 0px 5px;
+	padding: 4px 4px 4px 8px;
+}
+.goTK{
+	width: 442px;
+	height: 34px;
+}
+.oGoTK{
+	width: 442px;
+	height: 34px;
+	background-color: #434D58;
+	border-radius: 0px 5px 5px 0px;
+	padding: 4px;
+	border: 0px;
+	color: #bfbfbf;
+	font-size: 16px;
+}
+.head_right{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.chucNang{
+	width: 34px;
+	height: 32px;
+	margin-right: 18px;
+	background-color: #1A2735;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 11px;
+}
+
+/*=========================
+    Phần thân của trang
+===========================
+
+main
+	cotNDLeft
+		dieuHuong
+			post
+				avatar
+				dang
+				ndang
+		forYou					
+			baiDang1
+				tenctus
+				anhbd
+				status
+				cmt
+					thaTim
+						binhLuan
+							avtbl
+							nhapbl
+						likeshare
+					blm1
+							cmtd2
+					blm2
+						avtbl
+						cmtbl
+							userbl
+							cmtd
+	cotNDRight
+		deXuat
+			tenDX
+			dsdx
+			see
+				tkdx       bad
+					ttkdx
+						anhdd
+						tentk
+							tenid
+							tenth
+					nutfl
+		quangCao
+
+
+=========================*/
+
+.main{
+	max-width: 990px;
+	width: 100%;
+	height: 100%;
+   	margin: 40px auto 0px;
+   	padding: 0 8px;
+	color: white;
+	position: relative;
+	top: 55px;
+	display: flex;
+	flex-direction: row;
+}
+.cotNDLeft{
+   	max-width: 625px;
+   	width: 100%;
+   	min-height: 200px;
+   	display: flex;
+	align-items: flex-end;
+   	flex-direction: column;
+}
+.dieuHuong{
+   	max-width: 540px;
+   	width: 100%;
+	height: 150px;
+}
+.post{
+   	min-height: 130px;
+   	background-color: #36465D;
+   	border-radius: 3px;
+   	padding: 15px 15px;
+   	margin-bottom: 20px;
+   	position: relative;
+}
+.avatar{
+	width: 64px;
+	height: 64px;
+   	position: absolute;
+   	top: 0;
+   	left: -85px;
+}
+.avatar img{
+	width: 64px;
+	height: 64px;
+	border-radius: 5px;
+}
+.dang{
+	width: 100%;
+	height: 55px;
+	background-color: #36465D;
+	border-right: 1px solid #565E69;
+	border-top: 1px solid #565E69;
+	border-bottom: 1px solid #565E69;
+	border-left: 1px solid #565E69;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	padding: 15px 7px;
+	font-size: 18px;
+	color: #bfbfbf;
+}
+.ndang{
+	width: 510px;
+	height: 35px;
+	background-color: #00b8ff;
+	border-radius: 5px;
+	border: none;
+	font-size: 18px;
+}
+.forYou{
+   	max-width: 540px;
+   	width: 100%;
+}
+.baiDang2{
+	width: 100%;
+	min-height: 165px;
+	background-color: #36465D;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	position: relative;
+	display: none;
+}
+.baiDang1{
+	width: 100%;
+	min-height: 165px;
+	background-color: #36465D;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.tenctus{
+	width: 100%;
+	height: 36px;
+	margin-bottom: 15px;
+	padding: 15px 20px 0px;
+	color: white;
+	font-size: 16px;
+}
+.anhbd{
+	width: 100%;
+}
+.anhbd img{
+	width: 100%;
+}
+.anhbd video{
+	width: 100%;
+}
+.status{
+	width: 100%;
+	margin: 12px 0px;
+	padding: 0px 20px;
+	word-break: break-word;
+	color: #8F949C;
+	line-height: 1.5;
+	font-size: 18px;
+}
+.cmt{
+	width: 100%;
+	min-height: 72px;
+}
+.thaTim{
+	width: 100%;
+	height: 72px;
+	padding:12px 0px 15px;
+	border-top: 1px solid #565E69;
+	display: flex;
+	flex-direction: row;
+}
+.binhLuan{
+	width: 446px;
+	height: 100%;
+	padding: 0px 10px;
+	display: flex;
+	flex-direction: row;
+}
+.nhapbl{
+	width: 370px;
+	height: 100%;
+	background-color: #36465D;
+	border-radius: 15px 0px 0px 15px;
+	border-top: 1px solid #565E69;
+	border-bottom: 1px solid #565E69;
+	border-left: 1px solid #565E69;
+	padding: 10px;
+	font-size: 18px;
+	color: #bfbfbf;
+}
+.guibl{
+	width: 56px;
+	height: 100%;
+	background-color: #36465D;
+	border-radius: 0px 15px 15px 0px;
+	border-top: 1px solid #565E69;
+	border-right: 1px solid #565E69;
+	border-bottom: 1px solid #565E69;
+	color: #529ECC;
+	font-size: 18px;
+}
+.likeshare{
+	width: 94px;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.blm1{
+	width: 100%;
+	min-height: 60px;
+	padding:0px 10px 15px;
+	display: none;
+	flex-direction: row;
+}
+.cmtd2{
+	min-height: 24px;
+	line-height: 1.5;
+	font-size: 16px;
+	color: #8f949c;
+	word-break: break-word;
+}
+.blm2{
+	width: 100%;
+	min-height: 60px;
+	padding:0px 10px 15px;
+	display: flex;
+	flex-direction: row;
+}
+.avtbl{
+	width: 32px;
+	height: 32px;
+	margin-right: 10px;
+	border-radius: 3px;
+}
+.cmtbl{
+	max-width: 408px;
+	min-height: 65px;
+	border-radius: 5px;
+	padding: 8px 12px;
+	border: 1px solid #565E69;
+}
+.userbl{
+	height: 21px;
+	line-height: 21px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #bfbfbf;
+}
+.cmtd{
+	min-height: 24px;
+	line-height: 1.5;
+	font-size: 16px;
+	color: #8f949c;
+	word-break: break-word;
+}
+.cotNDRight{
+   	max-width: 320px;
+   	width: 100%;
+   	margin-left: 30px;
+	display: flex;
+   	flex-direction: column;
+}
+.deXuat{
+	width: 100%;
+	background-color: #25313E;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+.tenDX{
+	width: 100%;
+	height: 54px;
+	border-bottom: 1px solid #303B47;
+	padding: 15px;
+	font-size: 18px;
+   	letter-spacing: 1px;
+   	color: #bfbfbf;
+}
+.dsdx{
+	width: 100%;
+	padding: 10px 0px;
+}
+.see{
+	width: 100%;
+	height: 56px;
+	background-color: #25313E;
+	border-radius: 3px;
+	border-top: 1px solid #303B47;
+	padding: 16px;
+	text-align: center;
+	font-size: 18px;
+   	color: #529ECC;
+}
+.tkdx{
+	width: 100%;
+	height: 59px;
+	display: flex;
+	flex-direction: row;
+}
+.bad{
+	width: 100%;
+	height: 59px;
+	display: none;
+	flex-direction: row;
+}
+.ttkdx{
+	width: 226px;
+	height: 100%;
+	padding: 8px 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.anhdd{
+	width: 37px;
+	height: 37px;
+	margin-right: 11px;
+}
+.anhdd img{
+	width: 37px;
+	height: 37px;
+	border-radius: 3px;
+}
+.tentk{
+	width: 158px;
+	height: 100%;
+}
+.tenid{
+	width: 100%;
+	height: 21px;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	line-height: 21px;
+   	color: #bfbfbf;
+}
+.tenth{
+	width: 100%;
+	height: 21px;
+	font-size: 12px;
+	line-height: 21px;
+   	color: #858A8F;
+}
+.nutfl{
+	width: 94px;
+	height: 100%;
+	text-align: center;
+	line-height: 59px;
+	font-weight: bold;
+	font-size: 12px;
+   	color: #529ECC;
+}
+.quangCao{
+	width: 100%;
+	height: 94px;
+	margin-bottom: 20px;
+	position: sticky;
+	top: 69px;
+	color: #bfbfbf;
+}
+.ttQC{
+	width: 100%;
+	height: 38px;
+	border-bottom: 2px solid #303B47;
+	padding: 0px 10px 10px 10px;
+	font-size: 21px;
+	font-weight: bolder;
+}
+.tQC{
+	width: 100%;
+	height: 56px;
+	padding: 10px;
+	line-height: 36px;
+}
+

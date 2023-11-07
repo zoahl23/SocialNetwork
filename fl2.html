@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Trang chủ</title>
+		<!-- link font chữ -->
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<!-- link icon -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<!-- link css -->
+		<link rel="stylesheet" href="css/styleHome.css">
+		<link rel="stylesheet" href="css/styleTCN.css">
+		<link rel="stylesheet" href="css/menu.css">
+		<style type="text/css">
+		.material-symbols-rounded {
+			color: #858A8F;
+			font-variation-settings:
+				'FILL' 1,
+				'wght' 400,
+				'GRAD' 0,
+				'opsz' 48
+		}
+		.icon1{
+			font-size: 30px;
+		}
+		.icon2{
+			font-size: 26px;
+		}
+		.ictym{
+			font-size: 27px;
+			margin-right: 20px;
+			line-height: 45px;
+		}
+		.tt{
+			color: #bfbfbf;
+		}
+		.chucNang span:hover{
+			color: #bfbfbf;
+		}
+		.chucNang span:active{
+			color: #bfbfbf;
+		}
+		.tkdx:hover{
+			background-color: #303B47;
+		}
+		</style>	
+	</head>
+	<body class='kiemTra'>
+		<!-- Phần đầu của trang -->
+		<div class="head">
+				<div class="head_left">
+					<div class="logo_head"><img src="image/z.png" width="34px"></div>
+					<div class="timKiem">
+						<button class="kinhLup"><span class="material-symbols-rounded icon2">search</span></button>
+						<div class="goTK"><input type="text" class="oGoTK" placeholder="Search Zoahl"></div>
+					</div>
+				</div>
+				<ul class="head_right">
+					<li class="chucNang"><span class="material-symbols-rounded icon1 tt">home</span></li>
+					<li class="chucNang"><span class="material-symbols-rounded icon1">person</span></li>
+					<li class="chucNang"><span class="material-symbols-rounded icon2">near_me</span></li>
+					<li class="chucNang">
+						<span class="material-symbols-rounded icon1">dehaze</span>
+						<ul class="menu2">
+							<li class="setTing"><a href="edit.html">Setting</a>
+								<ul class="menu3">
+									<li class="edit" onclick="edit()"><a href="edit.html">Edit Profile</a></li>
+								</ul>
+							</li>
+							<li class="change" onclick="change()"><a href="logIn.html">Change Account</a></li>
+							<li class="LogOut" onclick="logout()"><a href="guest.html">Log Out</a></li>
+						</ul>
+					</li>
+				</ul>
+		</div>
+		<!-- Phần thân của trang -->
+		<div class="main">
+			<div class="cotNDLeft">
+				<div class="headTrang">
+					<img class="anhAvt" src="image/avt2.jpg">
+					<div class="tenND">
+						<div class="tenID">vtv2news</div>
+						<div class="tenDD">VTV2 Chất lượng cuộc sống</div>
+						<button class="edOrFl">Follow</button>
+						<a href="messV2.html"><button class="edOrFl ss">Messages</button></a>
+					</div>
+				</div>
+				<div class="thogTin">
+					<div class="flwing">
+						<b>1</b>
+						Following
+					</div>
+					<div class="flwing">
+						<b>3M</b>
+						Followers
+					</div>
+					<div class="flwing">
+						<b>4.7M</b>
+						like
+					</div>
+				</div>
+				<div class="forYou">
+					<div class="baiDang1">
+						<div class="avatar">
+							<img src="image/avt2.jpg">
+						</div>
+						<div class="tenctus">VTV2 Chất lượng cuộc sống</div>
+						<div class="anhbd">
+							<video src="image/vtv2.mp4" controls></video>
+							<!-- controls: hiển thị thanh điều khiển -->
+						</div>
+						<div class="status">Nếu trong rừng không được dọn dẹp thì các khu rừng sẽ ra sao? Loài nào được coi là những kẻ dọn dẹp chuyên nghiệp và vì sao?</div>
+						<div class="cmt">
+							<div class="thaTim">
+								<div class="binhLuan">
+									<textarea class="nhapbl" placeholder="Your words here"></textarea>
+									<button class="guibl">Ups!</button>
+								</div>
+								<div class="likeshare">
+									<div class="material-symbols-rounded ictym">share</div>
+									<div class="material-symbols-rounded ictym">favorite</div>
+								</div>
+							</div>
+							<div class="blm1">
+								<img class="avtbl" src="image/avttui.jpg">
+								<div class="cmtbl">
+									<div class="userbl">zoahl23</div>
+									<div class="cmtd2"></div>
+								</div>
+							</div>
+							<div class="blm2">
+								<img class="avtbl" src="image/avthong.jpg">
+								<div class="cmtbl">
+									<div class="userbl">hongnguyen</div>
+									<div class="cmtd">Kền kền có tác dụng ghê ta</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cotNDRight">
+				<div class="deXuat">
+					<div class="tenDX">Suggested accounts</div>
+					<div class="dsdx">
+						<div class="tkdx qq">
+							<div class="ttkdx">
+								<div class="anhdd">
+									<img src="image/avtlam.jpg">
+								</div>
+								<div class="tentk">
+									<div class="tenid">duongbaolam</div>
+									<div class="tenth">Lê Dương Bảo Lâm</div>
+								</div>
+							</div>
+							<div class="nutfl">Follow</div>
+						</div>
+						<div class="tkdx qq">
+							<div class="ttkdx">
+								<div class="anhdd">
+									<img src="image/avt2.jpg">
+								</div>
+								<div class="tentk">
+									<div class="tenid">vtv2news</div>
+									<div class="tenth">VTV2 Chất lượng cuộc sống</div>
+								</div>
+							</div>
+							<div class="nutfl">Follow</div>
+						</div>
+						<div class="tkdx qq">
+							<div class="ttkdx">
+								<div class="anhdd">
+									<img src="image/atv24.jpg">
+								</div>
+								<div class="tentk">
+									<div class="tenid">vtv24news</div>
+									<div class="tenth">VTV24</div>
+								</div>
+							</div>
+							<div class="nutfl">Follow</div>
+						</div>
+						<div class="tkdx qq">
+							<div class="ttkdx">
+								<div class="anhdd">
+									<img src="image/avthong.jpg">
+								</div>
+								<div class="tentk">
+									<div class="tenid">hongnguyen</div>
+									<div class="tenth">Nguyễn Hồng</div>
+								</div>
+							</div>
+							<div class="nutfl">Follow</div>
+						</div>
+						<div class="tkdx qq bad">
+							<div class="ttkdx">
+								<div class="anhdd">
+									<img src="image/avttt.jpeg">
+								</div>
+								<div class="tentk">
+									<div class="tenid">tranthanh123</div>
+									<div class="tenth">Trấn Thành</div>
+								</div>
+							</div>
+							<div class="nutfl">Follow</div>
+						</div>
+					</div>
+					<button class="see">See all</button>
+				</div>
+				<div class="quangCao">
+					<div class="ttQC">Sponsored</div>
+					<div class="tQC">Wanna go ad-free ?</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script src="js/banBe1post.js"></script>
+	</body>
+</html>

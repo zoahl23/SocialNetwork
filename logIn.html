@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Đăng nhập</title>
+		<link rel="stylesheet" href="css/styleLogIn.css">
+		<script type="text/javascript">
+			localStorage.setItem("kiemTra","false");
+			function logIn () {
+				const tid = document.getElementById('tid');
+				const nmk = document.getElementById('nmk');
+
+				if((tid.value == 'zoahl203') && ( nmk.value == '4321'))
+				{
+					localStorage.setItem("chuTK","hihi");
+					localStorage.setItem("kiemTra","true");
+					alert("Đăng nhập thành công! Hệ thống sẽ đưa bạn về trang chủ");
+					window.location = "Index.html";
+				}
+				else if((tid.value == localStorage.getItem('tid')) && ( nmk.value == localStorage.getItem('nmk')))
+				{
+					localStorage.setItem("chuTK","bad");
+					localStorage.setItem("kiemTra","true");
+					alert("Đăng nhập thành công! Hệ thống sẽ đưa bạn về trang chủ");
+					window.location = "Index.html";
+				}
+				else{
+					localStorage.setItem("kiemTra","false");
+					alert("Sai tên đăng nhập hoặc mật khẩu");
+				}
+				// xóa tất cả
+				// localStorage.clear();
+
+				//xem số lượng đã lưu trên trình duyệt
+				// var data = localStorage.length;
+				// alert(data);
+			}
+
+			function chTrag () {
+				window.location = 'signUp.html';
+			}
+		</script>
+	</head>
+	<body>
+		<div class="head">
+			<div class="head_right">
+				<button class="btsu" onclick="chTrag ()">Sign Up</div>
+			</div>
+		</div>
+		<div class="form">
+			<div class="tenMXH"><img src="image/zoablr.png" height="56px"></div>
+			<div class="phanLog">
+				<div class="nhap">
+					<input type="text" class="ip" placeholder="Tên ID" id="tid">
+				</div>
+				<div class="nhap">
+					<input type="password" class="ip" placeholder="Mật khẩu" id="nmk">
+				</div>
+				<div class="dieuKhoan">By clicking log in, or continuing with the other options below, you agree to Zoahl’s Terms of Service and have read the Privacy Policy</div>
+				<div class="dangNhap">
+					<button class="bt" onclick="logIn()">Log In</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

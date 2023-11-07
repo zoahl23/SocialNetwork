@@ -1,0 +1,119 @@
+/*=========================
+    Phần thân của trang
+===========================
+
+main
+	cotNDLeft
+		chat
+			avtTen
+			tinNhan
+				cctui
+					dChatR
+				ccbb
+					dChatL
+				ccmoi
+			oChat
+				nhapChat
+				send
+	cotNDRight
+		
+
+=========================*/
+
+.chat{
+	width: 540px;
+	height: 600px;
+	background-color: #36465D;
+	border-radius: 5px;
+	float: right;
+}
+.avtTen{
+	width: 100%;
+	height: 59px;
+	border-bottom: 1px solid #565E69;
+	padding: 8px 10px 8px 15px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.tinNhan{
+	width: 100%;
+	height: 470px;
+	padding: 10px;
+	overflow: auto;
+}
+.cctui{
+	width: 300px;
+	min-height: 35px;
+	margin-bottom: 10px;
+	float: right;
+}
+.dChatR{
+	min-height: 35px;
+	border-radius: 5px;
+	border: 1px solid #565E69;
+	padding: 5px 10px;
+	float: right;
+	word-break: break-word;
+	line-height: 1.25;
+	text-align: justify;
+}
+.ccbb{
+	width: 300px;
+	min-height: 35px;
+	margin-bottom: 10px;
+	clear: right;
+}
+.dChatL{
+	min-height: 35px;
+	border-radius: 5px;
+	border: 1px solid #565E69;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	float: left;
+	word-break: break-word;
+	line-height: 1.25;
+	text-align: justify;
+}
+.ccmoi{
+	width: 300px;
+	min-height: 35px;
+	margin-bottom: 10px;
+	float: right;
+	display: none;
+}
+.oChat{
+	width: 100%;
+	height: 69px;
+	border-top: 1px solid #565E69;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+}
+.nhapChat{
+	width: 450px;
+	height: 48px;
+	background-color: #36465D;
+	border-radius: 15px 0px 0px 15px;
+	border-top: 1px solid #565E69;
+	border-bottom: 1px solid #565E69;
+	border-left: 1px solid #565E69;
+	padding: 10px;
+	font-size: 18px;
+	color: #bfbfbf;
+}
+.send{
+	width: 70px;
+	height: 48px;
+	background-color: #36465D;
+	border-radius: 0px 15px 15px 0px;
+	border-top: 1px solid #565E69;
+	border-right: 1px solid #565E69;
+	border-bottom: 1px solid #565E69;
+	color: #529ECC;
+	font-size: 18px;
+}
+
+.vv{
+	background-color: #303B47;
+}
